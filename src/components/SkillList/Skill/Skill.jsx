@@ -1,14 +1,14 @@
 import PropTypes from "prop-types";
 
-function Skill(props) {
+function Skill({ skill }) {
   Skill.propTypes = {
     skill: PropTypes.object,
   };
 
   return (
-    <div className="skill" style={{ backgroundColor: props.skill.color }}>
-      <span>{props.skill.name}</span>
-      <span>{props.skill.level}</span>
+    <div className="skill" style={{ backgroundColor: skill.color }}>
+      <span>{skill.name}</span>
+      <span>{skill.level}</span>
     </div>
   );
 }

@@ -5,9 +5,7 @@ function SkillList() {
   return (
     <div className="skill-list">
       {skills.map((skill, index) => (
-        <div key={index}>
-          <Skill skill={skill} />
-        </div>
+        <Skill skill={skill} key={index} />
       ))}
     </div>
   );
